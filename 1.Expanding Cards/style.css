@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto&display=swap");
+
+/* font-family: "Luxurious Roman", cursive; */
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.container {
+	display: flex;
+	width: 90vw;
+}
+
+.panel {
+	background-size: auto 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80vh;
+	border-radius: 50px;
+	color: azure;
+	flex: 0.5;
+	position: relative;
+	cursor: pointer;
+	margin: 0.5rem;
+	transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+	font-family: "Luxurious Roman", cursive;
+	letter-spacing: 0.2rem;
+	font-size: 24px;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	margin: 0;
+	opacity: 0;
+}
+
+.panel.active {
+	flex-grow: 5;
+}
+
+.panel.active h3 {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+@media (max-width: 600px) {
+	.container {
+		width: 100vw;
+	}
+
+	.panel:nth-of-type(4),
+	.panel:nth-of-type(5) {
+		display: none;
+	}
+}
