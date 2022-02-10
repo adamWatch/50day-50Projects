@@ -19,11 +19,25 @@ body {
 }
 
 .box {
-	width: 25vw;
-	height: 25vh;
+	width: 400px;
+	height: 150px;
 	background-color: olivedrab;
 	margin: 1rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transform: translateX(-100vw);
+	animation-name: rectangle;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes rectangle {
+	from {
+		transform: translateX(-100vw);
+	}
+
+	to {
+		transform: translateX(0vw);
+	}
 }
