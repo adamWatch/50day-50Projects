@@ -20,9 +20,6 @@ drawRectangle();
 
 document.addEventListener("scroll", () => {
 	let scrollY = window.scrollY;
-	console.log(allRectangleHeight);
-
-	console.log(scrollY);
 
 	if (
 		scrollY + windowHeight - rectangleHeight * 2 >= allRectangleHeight &&
