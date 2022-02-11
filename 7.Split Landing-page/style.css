@@ -31,6 +31,7 @@ body {
 	height: 100%;
 	background-position: center;
 	background-size: cover;
+	transition: 0.4s;
 }
 
 .left-content,
@@ -58,6 +59,11 @@ body {
 .left-content button:hover,
 .right-content button:hover {
 	font-size: 1.4rem;
+}
+
+.background-left:hover,
+.background-right:hover {
+	width: 120%;
 }
 
 h2 {
