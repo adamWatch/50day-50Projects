@@ -18,3 +18,67 @@ body {
 	height: 100vh;
 	overflow: hidden;
 }
+
+.container {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+
+.background-left,
+.background-right {
+	width: 50%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.left-content,
+.right-content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.left-content button,
+.right-content button {
+	width: 25%;
+	margin-top: 0.4rem;
+	font-size: 1.3rem;
+	padding: 0.3rem;
+	background-color: transparent;
+	box-shadow: 10px 5px 5px black;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.left-content button:hover,
+.right-content button:hover {
+	font-size: 1.4rem;
+}
+
+h2 {
+	font-size: 2.3rem;
+	color: azure;
+}
+
+.background-left {
+	background-image: url(./images/Nintendo-Switch.jpg);
+}
+
+.left-content {
+	background-color: rgba(242, 7, 38, 0.3);
+	font-family: "Luxurious Roman", cursive;
+}
+
+.right-content {
+	background-color: rgba(163, 6, 168, 0.3);
+	font-family: "Luxurious Roman", cursive;
+}
+
+.background-right {
+	background-image: url(./images/steam-deck.jpg);
+}
