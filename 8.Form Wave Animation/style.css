@@ -16,5 +16,48 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	overflow: hidden;
+	background: rgb(79, 80, 26);
+	background: linear-gradient(
+		90deg,
+		rgba(79, 80, 26, 1) 0%,
+		rgba(191, 188, 45, 1) 50%,
+		rgba(124, 131, 4, 1) 100%
+	);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 25vw;
+	height: 35vh;
+	background: rgb(79, 80, 33);
+	background: linear-gradient(
+		90deg,
+		rgba(79, 80, 33, 1) 0%,
+		rgba(70, 69, 20, 1) 48%,
+		rgba(124, 131, 4, 1) 100%
+	);
+	color: azure;
+}
+
+h1 {
+	padding: 0.4rem;
+}
+
+input {
+	margin: 0.4rem;
+}
+
+label {
+	width: 85%;
+	margin: 0.6rem;
+}
+
+button {
+	width: 85%;
+	padding: 0.3rem;
+	font-size: 1.4rem;
+	background-color: rgb(194, 194, 26);
 }
