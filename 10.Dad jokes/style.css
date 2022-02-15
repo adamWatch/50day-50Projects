@@ -10,6 +10,7 @@
 }
 
 body {
+	background-color: rgb(89, 122, 223);
 	font-family: "Roboto", sans-serif;
 	display: flex;
 	flex-direction: column;
@@ -17,4 +18,47 @@ body {
 	justify-content: center;
 	height: 100vh;
 	overflow: hidden;
+}
+
+#container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 45vw;
+	height: 40vh;
+	color: azure;
+	background-color: rgb(178, 79, 224);
+	border-radius: 5px;
+}
+h2 {
+	position: absolute;
+	top: 10%;
+	font-size: 1.3rem;
+}
+
+#joke {
+	margin: 1rem;
+	text-align: justify;
+	font-size: 1.5rem;
+	padding: 0.2rem;
+}
+
+button {
+	position: absolute;
+	bottom: 10%;
+	width: 50%;
+	border-radius: 5px;
+	border: none;
+	padding: 0.4rem;
+	color: azure;
+	background-color: rgb(123, 36, 163);
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgb(133, 39, 177);
+	border-radius: 10px;
 }
