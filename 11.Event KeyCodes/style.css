@@ -18,3 +18,27 @@ body {
 	height: 100vh;
 	overflow: hidden;
 }
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45vw;
+	height: 35vh;
+}
+.event {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 33.33%;
+}
+
+.box {
+	background-color: burlywood;
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	padding: 0.6rem;
+	margin-top: 0.5rem;
+	font-size: 2rem;
+}
