@@ -17,4 +17,40 @@ body {
 	justify-content: center;
 	height: 100vh;
 	overflow: hidden;
+	background-color: purple;
+}
+
+.container {
+	color: azure;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 50vw;
+}
+
+.container h2 {
+	margin-bottom: 0.5rem;
+}
+
+.container textarea {
+	width: 40vw;
+	height: 15vh;
+	font-size: 1.5rem;
+	margin: 0.5rem 0;
+	padding: 0.3rem;
+	outline: none;
+}
+
+.choices-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.choice {
+	background-color: crimson;
+	margin: 0.5rem;
+	border-radius: 50px;
+	padding: 0.7rem;
 }
