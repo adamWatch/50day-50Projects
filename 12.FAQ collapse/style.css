@@ -62,3 +62,34 @@ h1 {
 .question.active .answer {
 	display: block;
 }
+
+.question-toggle {
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.1rem;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	height: 30px;
+	width: 30px;
+}
+
+.question-toggle:focus {
+	outline: none;
+}
+
+.question-toggle .fa-times {
+	display: none;
+}
+
+.question.active .question-toggle .fa-times {
+	display: block;
+}
+
+.question.active .question-toggle .fa-chevron-down {
+	display: none;
+}
