@@ -54,3 +54,7 @@ body {
 	border-radius: 50px;
 	padding: 0.7rem;
 }
+
+.choice.picked {
+	background-color: royalblue;
+}
