@@ -8,12 +8,12 @@ body {
 	background-color: #eafbff;
 	background-image: linear-gradient(
 		to bottom,
-		#eafbff 0%,
-		#eafbff 50%,
+		#d1e295 0%,
+		#d1e295 50%,
 		#5290f9 50%,
 		#5290f9 100%
 	);
-	font-family: "Muli", sans-serif;
+	font-family: "Luxurious Roman", cursive;
 	display: flex;
 	align-items: center;
 	justify-content: center;
