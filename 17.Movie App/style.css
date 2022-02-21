@@ -79,3 +79,19 @@ body {
 	padding: 0.3rem;
 	background-color:rgb(85, 25, 109);
 }
+
+.crimson{
+	color: crimson;
+}
+
+.orange{
+	color: orangered;
+}
+
+.yellow{
+	color:yellow
+}
+
+.green{
+	color: green;
+}
