@@ -6,6 +6,7 @@ const SEARCHAPI =
 
 const movie = document.querySelector('.movie');
 const container = document.querySelector('.container');
+const input = document.querySelector('.search');
  
 getMovies(APIURL);
 
@@ -44,16 +45,43 @@ function showMovies(movies){
         
         <img src="${IMGPATH + poster_path}" alt="" class="img">
         <div class="title-container">
+    
             <h2 class="title">${title}</h2>
-            <span class="grade">${vote_average}</span>
+            <span class="grade ${getColor(vote_average)}">${vote_average}</span>
         
         `
         poster.classList.add('movie')
 
         container.appendChild(poster);
 
-    })
+    });
+
+    function getColor(grade){
+        if(grade >= 7.5){
+            return 'green';
+        }else if(grade >= 5.5){
+            return 'yellow';
+        }else if(grade >= 3.7){
+            return 'orange';
+        }else if(grade >= 0){
+            return 'crimson';
+        }
+
+    }
     
 }
+
+function searchMovie(){
+
+    const inputValue = input.value;
+
+    if(inputValue){
+        getMovies(SEARCHAPI + inputValue);
+    }
+
+}
+
+input.addEventListener('input',searchMovie);
+
 
 
