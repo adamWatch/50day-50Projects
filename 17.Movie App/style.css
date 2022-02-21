@@ -11,10 +11,71 @@
 
 body {
 	font-family: "Roboto", sans-serif;
+	background-color: rgb(133, 34, 172);
+}
+
+.header{
 	display: flex;
-	flex-direction: column;
+	width: 100%;
 	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	overflow: hidden;
+	justify-content: flex-end;
+
+}
+.header h1{
+	width: 100%;
+	margin-left: 1.7rem;
+	font-family: "Luxurious Roman", cursive; 
+	
+}
+
+.search{
+	display: block;
+	width: 25%;
+	margin: 1rem;
+	outline: none;
+	border: none;
+	color: azure;
+	background-color: purple;
+	padding: 0.5rem;
+	font-size: 1.5rem;
+}
+
+.container{
+	background-color: purple;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.movie{
+	
+	color: azure;
+	width: 300px;
+	margin: 0.6rem;
+	
+}
+
+.img{
+	width: 100%;
+	
+	
+}
+
+.title-container{
+	background-color: rgb(94, 48, 148);
+	width: 100%;
+	min-height: 4rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem;
+}
+
+.title{
+		font-size: 1.2rem;
+}
+
+.grade{
+	align-self: center;
+	padding: 0.3rem;
+	background-color:rgb(85, 25, 109);
 }
