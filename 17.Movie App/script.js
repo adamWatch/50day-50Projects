@@ -45,7 +45,12 @@ function showMovies(movies){
         
         <img src="${IMGPATH + poster_path}" alt="" class="img">
         <div class="title-container">
-    
+            <div class="overview">
+                <span class="release-date">Release date:"${release_date}"</span>
+                </br>
+                <span >${overview}</span>
+            </div>
+            
             <h2 class="title">${title}</h2>
             <span class="grade ${getColor(vote_average)}">${vote_average}</span>
         
@@ -56,20 +61,23 @@ function showMovies(movies){
 
     });
 
-    function getColor(grade){
-        if(grade >= 7.5){
-            return 'green';
-        }else if(grade >= 5.5){
-            return 'yellow';
-        }else if(grade >= 3.7){
-            return 'orange';
-        }else if(grade >= 0){
-            return 'crimson';
-        }
-
-    }
+   
     
-}
+};
+
+function getColor(grade){
+    if(grade >= 7.5){
+        return 'green';
+    }else if(grade >= 5.5){
+        return 'yellow';
+    }else if(grade >= 3.7){
+        return 'orange';
+    }else if(grade >= 0){
+        return 'crimson';
+    }
+
+};
+
 
 function searchMovie(){
 
