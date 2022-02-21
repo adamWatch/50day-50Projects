@@ -62,12 +62,35 @@ body {
 }
 
 .title-container{
+	position: relative;
 	background-color: rgb(94, 48, 148);
 	width: 100%;
 	min-height: 4rem;
 	display: flex;
 	justify-content: space-between;
 	padding: 0.5rem;
+}
+
+.overview{
+	
+	position: fixed;
+	background-color:rgb(94, 48, 148) ;
+	left: 0;
+	bottom:0; 
+	right: 0;
+	transform: translateY(101%);
+	z-index: 1;
+	font-size: 1.3rem;
+	padding: 0.3rem;
+}
+.release-date{
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding: 0.3rem;
+}
+
+.movie:hover .overview{
+	transform: translateY(0);
 }
 
 .title{
