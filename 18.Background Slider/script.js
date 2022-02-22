@@ -25,10 +25,12 @@ left.addEventListener('click', ()=>{
 right.addEventListener('click', () =>{
     if(currentId === 2){
         currentId = 0;
-        slider.style.backgroundImage = `url('${imagesURL[currentId]}')`; 
+        slider.style.backgroundImage = `url('${imagesURL[currentId]}')`;
+        body.style.backgroundImage = `url('${imagesURL[currentId]}')`; 
     }else{
         currentId++;
-        slider.style.backgroundImage = `url('${imagesURL[currentId]}')`; 
+        slider.style.backgroundImage = `url('${imagesURL[currentId]}')`;
+        body.style.backgroundImage = `url('${imagesURL[currentId]}')`; 
     }
     
 
