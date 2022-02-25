@@ -9,22 +9,21 @@
 	box-sizing: border-box;
 }
 
-:root{
+:root {
 	--primary-color: black;
 	--secondary-color: white;
 }
 
-html.dark{
+html.dark {
 	--primary-color: green;
 	--secondary-color: black;
-
 }
 
-html{
+html {
 	transition: all 0.5s ease-in;
 }
 
-html.dark{
+html.dark {
 	background-color: black;
 	color: var(--primary-color);
 }
@@ -38,7 +37,7 @@ body {
 	overflow: hidden;
 }
 
-.toggle{
+.toggle {
 	cursor: pointer;
 	background-color: var(--primary-color);
 	color: var(--secondary-color);
@@ -46,28 +45,26 @@ body {
 	border-radius: 4px;
 	padding: 0.4rem;
 	top: 100px;
-
 }
 
-.toggle:focus{
+.toggle:focus {
 	outline: none;
 }
 
-.clock-container{
+.clock-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.clock{
+.clock {
 	position: relative;
 	width: 200px;
 	height: 200px;
-	background-color: aquamarine;
 }
 
-.needle{
+.needle {
 	background-color: var(--primary-color);
 	position: absolute;
 	top: 50%;
@@ -75,25 +72,24 @@ body {
 	height: 65px;
 	width: 3px;
 	transform-origin: bottom center;
-
 }
 
-.needle.hour{
+.needle.hour {
 	transform: translate(-50%, -100%) rotate(0deg);
 }
 
-.needle.minute{
+.needle.minute {
 	transform: translate(-50%, -100%) rotate(0deg);
 	height: 100px;
 }
 
-.needle.second{
+.needle.second {
 	transform: translate(-50%, -100%) rotate(0deg);
 	height: 100px;
 	background: crimson;
 }
 
-.center-point{
+.center-point {
 	background-color: crimson;
 	width: 10px;
 	height: 10px;
@@ -104,8 +100,8 @@ body {
 	border-radius: 50%;
 }
 
-.center-point:after{
-	content: '';
+.center-point:after {
+	content: "";
 	background-color: var(--primary-color);
 	width: 5px;
 	height: 5px;
@@ -116,17 +112,17 @@ body {
 	border-radius: 50%;
 }
 
-.time{
+.time {
 	font-size: 4.1rem;
 }
 
-.date{
+.date {
 	color: rgb(175, 170, 94);
 	font-size: 1.2rem;
 	text-transform: uppercase;
 }
 
-.date .circle{
+.date .circle {
 	background-color: var(--primary-color);
 	color: var(--secondary-color);
 	border-radius: 50%;
