@@ -17,4 +17,64 @@ body {
 	justify-content: center;
 	height: 100vh;
 	overflow: hidden;
+	background-color: khaki;
+}
+
+img {
+	max-width: 100%;
+}
+
+.card {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 11px;
+	overflow: hidden;
+	width: 360px;
+}
+
+.card-header {
+	height: 210px;
+}
+
+.card-header img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.card-content {
+	background-color: azure;
+	padding: 2rem;
+}
+
+.card-title {
+	height: 20px;
+}
+
+.card-excerpt {
+	color: #777;
+	margin: 10px 0 20px;
+}
+
+.author {
+	display: flex;
+}
+
+.profile-img {
+	border-radius: 51%;
+	overflow: hidden;
+	height: 40px;
+	width: 40px;
+}
+
+.author-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 10px;
+	width: 100px;
+}
+
+.author-info small {
+	color: #aaa;
+	margin-top: 5px;
 }
