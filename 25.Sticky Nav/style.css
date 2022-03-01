@@ -26,8 +26,13 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	height: 15vh;
+	width: 100%;
 	background-color: black;
 	color: azure;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: 0.2s;
 }
 
 .header h1 {
@@ -53,6 +58,7 @@ body {
 
 img {
 	width: 100%;
+	margin-top: 10vh;
 }
 
 h3 {
@@ -68,4 +74,15 @@ footer {
 	text-align: center;
 	text-transform: uppercase;
 	color: rgb(89, 68, 212);
+}
+
+.scrolled-background {
+	background-color: azure;
+	height: 11vh;
+	transition: 0.2s;
+}
+
+.scrolled {
+	color: black;
+	transform: scale(0.7);
 }
