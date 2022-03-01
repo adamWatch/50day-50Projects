@@ -14,7 +14,58 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	overflow: hidden;
+	background-color: rgb(175, 197, 154);
+}
+
+.container {
+	width: 100%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 15vh;
+	background-color: black;
+	color: azure;
+}
+
+.header h1 {
+	font-family: "Luxurious Roman", cursive;
+}
+
+.menu__list {
+	display: flex;
+	list-style-type: none;
+}
+
+.menu__link {
+	color: azure;
+	text-decoration: none;
+	padding: 1rem;
+	font-size: 1.2rem;
+	transition: color 0.2s;
+}
+
+.menu__link:hover {
+	color: brown;
+}
+
+img {
+	width: 100%;
+}
+
+h3 {
+	font-family: "Luxurious Roman", cursive;
+	padding: 1rem;
+}
+
+p {
+	padding: 2rem;
+}
+
+footer {
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(89, 68, 212);
 }
