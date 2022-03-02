@@ -11,10 +11,89 @@
 
 body {
 	font-family: "Roboto", sans-serif;
+
+	height: 100vh;
+}
+
+h1 {
+	font-family: "Luxurious Roman", cursive;
+}
+
+.slider-container {
+	position: relative;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+
+.left-slide {
+	height: 100%;
+	width: 35%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.left-slide > div {
+	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
-	overflow: hidden;
+	color: azure;
+}
+
+.left-slide h1 {
+	font-size: 2.5rem;
+	margin: 1rem;
+	letter-spacing: 2px;
+}
+
+.right-slide {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 35%;
+	width: 65%;
+}
+
+.right-slide > div {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100%;
+	width: 100%;
+}
+
+.down-button,
+.up-button {
+	position: absolute;
+	padding: 1rem;
+	font-size: 1.2rem;
+	left: 35%;
+	top: 50%;
+	color: azure;
+	background-color: purple;
+	outline: none;
+	border: 0;
+	box-shadow: 4px 1px 6px 5px rgba(218, 81, 81, 0.3);
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.down-button:hover {
+	top: 51%;
+}
+
+.up-button:hover {
+	top: 49%;
+}
+
+.down-button {
+	transform: translateX(-100%);
+}
+
+.up-button {
+	transform: translateY(-100%);
 }
