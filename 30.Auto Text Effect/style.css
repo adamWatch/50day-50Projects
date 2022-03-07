@@ -16,5 +16,30 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	overflow: hidden;
+	background-color: rgb(25, 150, 25);
+}
+
+.typing {
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: "Luxurious Roman", cursive;
+}
+
+.speed__container {
+	display: flex;
+	width: 8vw;
+	height: 10vh;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 5%;
+	background-color: rgb(18, 97, 18);
+	font-size: 1.3rem;
+}
+
+.speed {
+	background-color: rgb(25, 150, 25);
+	width: 2vw;
+	text-align: center;
+	font-size: 1.1rem;
 }
