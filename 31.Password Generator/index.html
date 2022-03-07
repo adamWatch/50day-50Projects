@@ -8,7 +8,35 @@
 		<title>My project</title>
 	</head>
 	<body>
-		<h1>Start</h1>
+		<form action="" class="generator">
+			<h1>Password Generator</h1>
+			<div class="textarea__container">
+				<textarea name="" id="pass" cols="30" rows="1"></textarea>
+				<button>Copy!</button>
+			</div>
+			<div class="form__control">
+				<label for="length">Password Length</label>
+				<input type="number" min="4" max="15" id="length" />
+			</div>
+			<div class="form__control">
+				<label for="uppercase">Include UPPERCASE letters</label>
+				<input type="checkbox" id="uppercase" />
+			</div>
+			<div class="form__control">
+				<label for="lowercase">Include lowercase letters</label>
+				<input type="checkbox" id="lowercase" />
+			</div>
+			<div class="form__control">
+				<label for="number">Include number</label>
+				<input type="checkbox" id="number" />
+			</div>
+			<div class="form__control">
+				<label for="symbol">Include symbols</label>
+				<input type="checkbox" id="symbol" />
+			</div>
+
+			<button id="submit" class="submit">Generate</button>
+		</form>
 
 		<script src="script.js"></script>
 	</body>
