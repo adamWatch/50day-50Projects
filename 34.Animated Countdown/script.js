@@ -1,4 +1,4 @@
-const nums = document.querySelectorAll(".num span");
+const nums = document.querySelectorAll(".nums span");
 const counter = document.querySelector(".counter");
 const finalMessage = document.querySelector(".final");
 const rerun = document.getElementById("replay");
