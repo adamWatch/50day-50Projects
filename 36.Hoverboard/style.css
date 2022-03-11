@@ -34,4 +34,5 @@ body {
 	height: 5%;
 	background-color: grey;
 	margin: 3px;
+	transition: background-color 0.2s linear;
 }
