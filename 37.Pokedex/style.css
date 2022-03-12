@@ -43,6 +43,7 @@ img {
 }
 small {
 	font-size: 0.9rem;
+	margin-bottom: 0.4rem;
 }
 
 .id {
@@ -54,5 +55,5 @@ small {
 h1 {
 	font-size: 1.5rem;
 	font-family: "Luxurious Roman", cursive;
-	margin: 0.4rem;
+	margin-bottom: 0.4rem;
 }
