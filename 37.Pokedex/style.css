@@ -39,6 +39,7 @@ img {
 	width: 80%;
 	background-color: azure;
 	border-radius: 50%;
+	margin: 0.4rem;
 }
 small {
 	font-size: 0.9rem;
