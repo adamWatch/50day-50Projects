@@ -17,4 +17,50 @@ body {
 	justify-content: center;
 	height: 100vh;
 	overflow: hidden;
+	background-color: chocolate;
+}
+
+.container {
+	width: 350px;
+	height: 400px;
+}
+
+img {
+	width: 100%;
+}
+
+.content {
+	display: none;
+}
+
+.content.active {
+	display: block;
+}
+
+.menu__list {
+	display: flex;
+	justify-content: space-between;
+	background-color: azure;
+}
+
+.menu__item {
+	list-style-type: none;
+	padding: 0.5rem;
+	border: 1px solid black;
+	width: 100%;
+}
+
+.menu__item:hover {
+	background-color: rgb(161, 180, 180);
+}
+
+.menu__link {
+	text-decoration: none;
+	color: purple;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.menu__link:hover {
+	color: rgb(80, 7, 80);
 }
