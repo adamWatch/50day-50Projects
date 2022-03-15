@@ -28,8 +28,8 @@ body {
 
 form {
 	background-color: azure;
-	width: 40vmax;
-	height: 50vmin;
+	width: 400px;
+	height: 500px;
 }
 h1 {
 	text-align: center;
@@ -54,6 +54,16 @@ label {
 .input {
 	font-size: 1.5rem;
 	padding: 0.4rem;
+}
+
+.gage {
+	background-color: red;
+	text-align: center;
+	color: black;
+	width: 70%;
+	align-self: center;
+	padding: 0.2rem;
+	margin-top: 0.1rem;
 }
 
 button {
