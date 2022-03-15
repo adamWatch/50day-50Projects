@@ -17,4 +17,57 @@ body {
 	justify-content: center;
 	height: 100vh;
 	overflow: hidden;
+	background: rgb(98, 99, 42);
+	background: radial-gradient(
+		circle,
+		rgba(98, 99, 42, 1) 0%,
+		rgba(74, 26, 122, 1) 82%,
+		rgba(63, 4, 131, 1) 100%
+	);
+}
+
+form {
+	background-color: azure;
+	width: 40vmax;
+	height: 50vmin;
+}
+h1 {
+	text-align: center;
+	font-family: "Luxurious Roman", cursive;
+}
+small {
+	text-align: center;
+}
+
+.form__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	padding: 2rem;
+}
+
+label {
+	font-size: 1.1rem;
+}
+
+.input {
+	font-size: 1.5rem;
+	padding: 0.4rem;
+}
+
+button {
+	font-size: 1.6rem;
+	margin-top: 0.4rem;
+	color: azure;
+	background-color: black;
+	padding: 0.4rem;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+button:hover {
+	color: rgb(170, 179, 179);
+	background-color: rgb(19, 18, 18);
 }
