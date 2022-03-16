@@ -18,3 +18,77 @@ body {
 	height: 100vh;
 	overflow: hidden;
 }
+
+.magic {
+	font-family: "Luxurious Roman", cursive;
+	background-color: purple;
+	padding: 0.5rem;
+	color: azure;
+	border: 0;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	position: fixed;
+	top: 1%;
+	letter-spacing: 0.04rem;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.magic:focus {
+	outline: none;
+}
+
+.magic:active {
+	transform: translateY(2px);
+}
+
+.boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	height: 500px;
+	width: 500px;
+	position: relative;
+	transition: 4s ease;
+}
+
+.boxes.big {
+	width: 600px;
+	height: 600px;
+}
+
+.boxes.big .box {
+	transform: rotateZ(360deg);
+}
+
+.box {
+	background-image: url("https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif");
+	background-repeat: no-repeat;
+	background-size: 500px 500px;
+	position: relative;
+	height: 125px;
+	width: 125px;
+	transition: 0.4s ease;
+}
+
+.box::after {
+	content: "";
+	background-color: rgb(61, 4, 61);
+	position: absolute;
+	top: 8px;
+	right: -15px;
+	height: 100%;
+	width: 15px;
+	transform: skewY(45deg);
+}
+
+.box::before {
+	content: "";
+	background-color: purple;
+	position: absolute;
+	bottom: -15px;
+	left: 8px;
+	height: 15px;
+	width: 100%;
+	transform: skewX(45deg);
+}
