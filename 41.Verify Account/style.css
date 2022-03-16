@@ -18,3 +18,54 @@ body {
 	height: 100vh;
 	overflow: hidden;
 }
+
+h2 {
+	font-family: "Luxurious Roman", cursive;
+	margin-top: 0.4rem;
+	font-size: 1.9rem;
+}
+
+.container {
+	background-color: azure;
+	width: auto;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid black;
+}
+
+.code {
+	font-size: 2.5rem;
+	text-align: center;
+	padding: 0.3rem;
+	margin: 0.4rem;
+	width: 80px;
+	height: 80px;
+	border: 1px solid white;
+	-moz-appearance: textfield;
+}
+
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.code:valid {
+	border-color: royalblue;
+	box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 600px) {
+	.code-container {
+		flex-wrap: wrap;
+	}
+
+	.code {
+		font-size: 3rem;
+		height: 80px;
+		max-width: 70px;
+	}
+}
