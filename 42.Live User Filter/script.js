@@ -29,3 +29,17 @@ async function getUsers() {
 }
 
 getUsers();
+
+function searchUser(search) {
+	const users = document.querySelectorAll(".user");
+
+	users.forEach((user) => {
+		if (user.innerText.toLowerCase().includes(search.toLowerCase())) {
+			user.classList.remove("hide");
+		} else {
+			user.classList.add("hide");
+		}
+	});
+}
+
+search.addEventListener("input", (e) => searchUser(e.target.value));
