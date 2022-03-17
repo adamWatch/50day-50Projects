@@ -76,3 +76,7 @@ header input:focus {
 small {
 	font-size: 1rem;
 }
+
+.hide {
+	display: none;
+}
