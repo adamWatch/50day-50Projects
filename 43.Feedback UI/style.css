@@ -18,3 +18,57 @@ body {
 	height: 100vh;
 	overflow: hidden;
 }
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+	padding: 2rem;
+}
+
+.faces__container {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	height: 200px;
+}
+
+.face {
+	font-size: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: yellow;
+	cursor: pointer;
+
+	padding: 0.5rem;
+	width: 33%;
+}
+.face:hover {
+	border: 1px solid rgb(185, 182, 182);
+	border-radius: 5px;
+}
+.face i {
+	background-color: black;
+	border-radius: 50%;
+}
+.face small {
+	color: black;
+	font-size: 2rem;
+	margin-top: 0.5rem;
+}
+
+.send {
+	width: 60%;
+	background-color: black;
+	color: azure;
+	padding: 0.6rem;
+	font-size: 1.3rem;
+	cursor: pointer;
+}
+
+.send:hover {
+	background-color: rgb(46, 45, 45);
+}
