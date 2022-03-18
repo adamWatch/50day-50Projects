@@ -72,3 +72,8 @@ body {
 .send:hover {
 	background-color: rgb(46, 45, 45);
 }
+
+.focus {
+	border: 2px solid rgb(185, 182, 182);
+	border-radius: 5px;
+}
