@@ -4,11 +4,32 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+		/>
 		<link rel="stylesheet" href="style.css" />
-		<title>My project</title>
+		<title>Feedback</title>
 	</head>
 	<body>
-		<h1>Start</h1>
+		<div class="container">
+			<h2>How satisfied are you with our hosting services?</h2>
+			<div class="faces__container">
+				<div class="face">
+					<i class="fa-solid fa-face-frown"></i>
+					<small>Unhappy</small>
+				</div>
+				<div class="face">
+					<i class="fa-solid fa-face-meh"></i>
+					<small>Neutral</small>
+				</div>
+				<div class="face">
+					<i class="fa-solid fa-face-grin-hearts"></i>
+					<small>Satisfied</small>
+				</div>
+			</div>
+			<button id="btn" class="send">Send Review</button>
+		</div>
 
 		<script src="script.js"></script>
 	</body>
