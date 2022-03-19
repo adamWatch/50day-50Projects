@@ -17,4 +17,46 @@ body {
 	justify-content: center;
 	height: 100vh;
 	overflow: hidden;
+	background: rgb(64, 102, 27);
+	background: linear-gradient(
+		7deg,
+		rgba(64, 102, 27, 1) 14%,
+		rgba(19, 159, 118, 1) 49%,
+		rgba(6, 107, 52, 0.9752275910364145) 90%
+	);
+}
+
+.header {
+	position: fixed;
+	top: 2%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: azure;
+	font-family: "Luxurious Roman", cursive;
+	letter-spacing: 0.1rem;
+}
+
+.range__container {
+	position: relative;
+}
+
+input[type="range"] {
+	width: 300px;
+	margin: 18px 0;
+	-webkit-appearance: none;
+	background: purple;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+input[type="range"] + label {
+	background-color: azure;
+	position: absolute;
+	top: -25px;
+	left: 110px;
+	width: 80px;
+	padding: 5px 0;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
