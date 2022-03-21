@@ -17,4 +17,94 @@ body {
 	justify-content: center;
 	height: 100vh;
 	overflow: hidden;
+	position: relative;
+}
+
+.btn-open {
+	position: fixed;
+	top: 5%;
+	left: 5%;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.header {
+	font-size: 2.5rem;
+	color: red;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+
+.container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 300px;
+	transition: transform 0.5s linear;
+	transform: translateX(-400px);
+}
+
+.container-black {
+	background-color: black;
+	width: 400px;
+	transition-delay: 0.1s;
+}
+
+.container-red {
+	background-color: red;
+	width: 350px;
+	transition-delay: 0.2s;
+}
+
+.container-white {
+	background-color: white;
+	position: relative;
+	transition: 0.3s;
+}
+.btn-close {
+	font-size: 1.2rem;
+	position: absolute;
+	top: 3%;
+	right: 5%;
+	border-radius: 50%;
+	padding: 0.4rem;
+	text-align: center;
+	transition: background-color 0.2s linear;
+	cursor: pointer;
+}
+
+.btn-close:hover {
+	background-color: rgb(218, 213, 213);
+}
+
+.menu-header {
+	font-size: 2rem;
+	margin: 1.5rem 0 2rem 1rem;
+}
+
+.menu {
+	position: fixed;
+	top: 3%;
+	left: 4%;
+}
+
+.menu__item {
+	list-style-type: none;
+	padding: 0.5rem;
+}
+
+.menu__link {
+	text-decoration: none;
+	color: black;
+	font-size: 1.4rem;
+	transition: color 0.2s linear;
+}
+
+.menu__link:hover {
+	color: rgb(114, 110, 110);
+}
+
+.active {
+	transform: translateX(0);
 }
