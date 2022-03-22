@@ -22,8 +22,8 @@ body {
 .container {
 	display: flex;
 	flex-direction: column;
-	width: 45vw;
-	height: 55vh;
+	width: 35vw;
+	height: 45vh;
 	align-items: center;
 	background-color: royalblue;
 	color: azure;
@@ -39,7 +39,7 @@ body {
 	width: 0%;
 	background-color: white;
 	height: 3%;
-	animation: progress 10s linear;
+	animation: progress 10s linear infinite;
 }
 
 .testimonial__text {
