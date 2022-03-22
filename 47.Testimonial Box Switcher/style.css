@@ -18,3 +18,62 @@ body {
 	height: 100vh;
 	overflow: hidden;
 }
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 45vw;
+	height: 55vh;
+	align-items: center;
+	background-color: royalblue;
+	color: azure;
+	padding: 1rem;
+	border-radius: 5px;
+	position: relative;
+}
+
+.progress-bar {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 0%;
+	background-color: white;
+	height: 3%;
+	animation: progress 10s linear;
+}
+
+.testimonial__text {
+	margin-top: 2rem;
+	font-size: 1.1rem;
+}
+
+.user__container {
+	display: flex;
+	margin-top: 1rem;
+}
+
+img {
+	width: 50%;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 0.9rem;
+}
+
+.user__info {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@keyframes progress {
+	0% {
+		width: 0%;
+	}
+	1% {
+		width: 1%;
+	}
+	100% {
+		width: 90%;
+	}
+}
